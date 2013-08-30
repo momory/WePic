@@ -3,46 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- JQM CDN -->
+
+		<!-- jquery mobile -->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+		<!-- this must be loaded before jQuery Mobile -->
+		<script type="text/javascript" src="js/jquery.mobile.settings.js"></script>
 		
+		<!-- phonegap -->
 		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/cordova_custom_plugins.js"></script>
+
+		<!-- for speeding op tap events -->
+		<script type="text/javascript" src="js/energize.js"></script>
 	</head>
-
-	<script>
-		// Wait for device API libraries to load
-	    //
-	    document.addEventListener("deviceready", onDeviceReady, false);
-
-	    // device APIs are available
-	    //
-	    function onDeviceReady() {
-	        // alert('You selected button ' + buttonIndex);
-	    };
-
-	    // Handle the pause event
-	    //
-	    function onPause() {
-	    	 console.log("I've been paused");
-	    }
-
-	    function onConfirm(buttonIndex) {
-	        alert('You selected button ' + buttonIndex);
-	    };
-
-	    // Show a custom confirmation dialog
-	    //
-	    function showConfirm() {
-	        navigator.notification.confirm(
-	            'You are the winner!', // message
-	             onConfirm,            // callback to invoke with index of button pressed
-	            'Game Over',           // title
-	            'Restart,Exit'         // buttonLabels
-	        );
-	    }
-	</script>
 
 	<body>
 		<!-- Start of login page -->
