@@ -14,10 +14,10 @@
 		<script type="text/javascript" src="js/jquery.mobile.settings.js"></script>
 
 		<!-- phonegap -->
-		
+		<!--
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="js/cordova_custom_plugins.js"></script>
-		
+		-->
 		<!-- for speeding op tap events -->
 		<script type="text/javascript" src="js/plugins/energize.js"></script>
 	</head>
@@ -28,13 +28,29 @@
 			<div data-role="content">
 				<form>
 	               <label for="email">Email</label>
-	               <input type="email" data-clear-btn="true" id="email" name="email" value="" data-theme="e" placeholder="email">
+	               <input type="text" data-clear-btn="true" id="email" name="email" value="" data-theme="e" placeholder="email" data-icon="delete" data-iconpos="right">
 	               <label for="pw">password</label>
-	               <input type="password" data-clear-btn="true" name="pw" id="pw" value="" data-theme="e" placeholder="password">
-	               <input type="button" value="login">
-				   <input type="button" value="join">
+	               <input type="password" data-clear-btn="true" name="pw" id="pw" value="" data-theme="e" placeholder="password" data-icon="delete">
+	               <a href="#" data-role="button">login</a>
+	               <a href="#join" data-role="button">join</a>
 				</form>
 			</div>
 		</div>
+
+		<!-- join page -->
+		<div data-role="page" id="join">
+			<div data-role="content">
+				<form>
+	               <label for="email">Email</label>
+	               <input type="text" data-clear-btn="true" id="email" name="email" value="" data-theme="e" placeholder="Email">
+	               <label for="name">Name</label>
+	               <input type="text" data-clear-btn="true" id="name" name="name" value="" data-theme="e" placeholder="Name" >
+	               <label for="pw">Password</label>
+	               <input type="password" data-clear-btn="true" name="pw" id="pw" value="" data-theme="e" placeholder="Password">
+	               <a href="#" data-role="button">join</a>
+				</form>
+			</div>
+		</div>
+
 	</body>
 </html>
