@@ -25,20 +25,32 @@
 	<body>
 		<!-- login page -->
 		<div data-role="page" id="login">
-			<div data-role="header" data-tap-toggle="false" data-position="fixed" data-theme="c" class="headerSticky">
-				<h2>GGGGGGGGGGGGGGGG</h2>
-			</div>
-
 			<div data-role="content">
 				<form>
-				     <label for="text-1">name :</label>
-				     <input type="text" name="text-1" id="text-1" value="" placeholder>
+	               <label for="email">Email</label>
+	               <input type="text" data-clear-btn="true" id="email" name="email" value="" data-theme="e" placeholder="email" data-icon="delete" data-iconpos="right">
+	               <label for="pw">password</label>
+	               <input type="password" data-clear-btn="true" name="pw" id="pw" value="" data-theme="e" placeholder="password" data-icon="delete">
+	               <a href="#" data-role="button">login</a>
+	               <a href="#join" data-role="button">join</a>
 				</form>
 			</div>
+		</div>
 
-			<div data-role="footer" data-tap-toggle="false" data-position="fixed" data-theme="a" class="footerSticky">
-				<h2>GGGGGGGGGGGGGGGG</h2>
+		<!-- join page -->
+		<div data-role="page" id="join">
+			<div data-role="content">
+				<form>
+	               <label for="email">Email</label>
+	               <input type="text" data-clear-btn="true" id="email" name="email" value="" data-theme="e" placeholder="Email">
+	               <label for="name">Name</label>
+	               <input type="text" data-clear-btn="true" id="name" name="name" value="" data-theme="e" placeholder="Name" >
+	               <label for="pw">Password</label>
+	               <input type="password" data-clear-btn="true" name="pw" id="pw" value="" data-theme="e" placeholder="Password">
+	               <a href="#" data-role="button">join</a>
+				</form>
 			</div>
 		</div>
+
 	</body>
 </html>
