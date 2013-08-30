@@ -26,9 +26,23 @@
 		<!-- main page -->
 		<div data-role="page" id="main">
 			<div data-role="content">
-				<a href="new_album.html" rel="external" data-role="button">make new album</a>				
+				<a href="new_album.html" rel="external" data-role="button">make new album</a>
+				<a href="#list" data-role="button" data-icon="arrow-r" data-iconpos="notext" data-theme="c" data-inline="true">Album list</a>				
 			</div>
 
 		</div>
+
+		<div data-role="page" id="list">
+			<div data-role="content">
+				album list...
+				<a href="share_album.html" rel="external" data-role="button">album details</a>
+				<a href="#main" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="c" data-inline="true">New album</a>			
+			</div>
+		</div>
+		
+		<!-- when album exists -->
+		<!-- 
+		<a href="share_album.html" rel="external" data-role="button">album details</a>
+		 -->
 	</body>
 </html>
