@@ -105,7 +105,9 @@
     <feature name="Notification">
 	    <param name="android-package" value="org.apache.cordova.Notification" />
 	</feature>
+	
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
+        <plugin name="BackgroundServicePlugin" value="com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin"/>
     </plugins>
 </widget>
