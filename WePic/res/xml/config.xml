@@ -109,5 +109,6 @@
     <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
         <plugin name="BackgroundServicePlugin" value="com.red_folder.phonegap.plugin.backgroundservice.BackgroundServicePlugin"/>
+         <plugin name="PushPlugin" value="com.plugin.gcm.PushPlugin" />
     </plugins>
 </widget>
